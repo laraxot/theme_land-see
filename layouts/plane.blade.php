@@ -3,8 +3,10 @@
 @section('htmlheader')
 	@include('pub_theme::layouts.partials.htmlheader')
 @show
-<body class="home">
-@yield('body')
+<body class="land-see">
+  @include($view.'.amp-animation')
+	
+  @yield('body')
 @section('scripts')
 	@include('pub_theme::layouts.partials.scripts')
 @show

@@ -1,3 +1,14 @@
+@extends('pub_theme::layouts.app')
+@section('content')
+		@include($view.'.hero')
+		@include($view.'.popular')
+		@include($view.'.banner')
+		@include($view.'.recent')
+		@include($view.'.land-see-story-categories')
+		@include($view.'.insta_follow')
+		@include($view.'.subscribe')
+@endsection
+{{--
 <!DOCTYPE html>
 <html ⚡="">
 	@include('pub_theme::layouts.partials.htmlheader')
@@ -5,13 +16,9 @@
 		@include($view.'.amp-animation')
 		@include('pub_theme::layouts.partials.headernav')
 		@include('pub_theme::layouts.partials.sidebar')
-		{{--
 		@include($view.'.hero')
-		--}}
 		@include($view.'.popular')
-		{{--
 		@include($view.'.banner')
-		--}}
 		@include($view.'.recent')
 		@include($view.'.land-see-story-categories')
 		@include($view.'.insta_follow')
@@ -19,3 +26,4 @@
 		@include('pub_theme::layouts.partials.footer')
 	</body>
 </html>
+--}}
