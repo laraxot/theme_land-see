@@ -28,6 +28,9 @@
 					<li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Shop</a></li>
 					<li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">About</a></li>
 					<li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Contact</a></li>
+					@foreach($page->archive as $p)
+						<li class="ampstart-nav-item "><a href="{{ $p->url }}" class="text-decoration-none block">{{ $p->title }}</a></li>
+					@endforeach 
 				</ul>
 			</nav>
 			<!--
