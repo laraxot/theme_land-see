@@ -7,7 +7,13 @@
 			</a>
 			<nav class="ampstart-headerbar-nav ampstart-nav  xs-hide sm-hide">
 				<ul class="list-reset center m0 p0 flex justify-center nowrap">
-					<li class="ampstart-nav-item "><a href="stories.amp.html" class="text-decoration-none block">Stories</a></li>
+                    <li class="ampstart-nav-item "><a href="{{ url('/') }}" class="text-decoration-none block">Home</a></li>
+                    @foreach($page->archive as $p)
+                    <li class="ampstart-nav-item "><a href="{{ $p->url }}" class="text-decoration-none block">{{$p->title}}</a></li>
+                    @endforeach
+                    {{--
+					<li class="ampstart-nav-item "><a href="stories.amp.html" class="text-decoration-none block">Blog</a></li>
+                    --}}
 					<li class="ampstart-nav-item ampstart-nav-dropdown relative">
 						<!-- Start Dropdown -->
 						<amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown absolute top-0 left-0 right-0 bottom-0">
@@ -25,9 +31,6 @@
 						</amp-accordion>
 						<!-- End Dropdown -->
 					</li>
-					<li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Shop</a></li>
-					<li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">About</a></li>
-					<li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Contact</a></li>
 				</ul>
 			</nav>
 			<!--

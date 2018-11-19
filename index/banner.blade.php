@@ -9,7 +9,7 @@
 					</amp-img>
 				</amp-anim>
 				<amp-anim class="mt4 mb4" alt="Summer Sale!" media="(max-width: 360px)" width="329" height="348" layout="responsive" src="../img/land-see/content/summer-sale-sm.gif">
-					<amp-img placeholder="" alt="Summer Sale!" media="(max-width: 360px)" width="329" height="348" layout="responsive" src="../img/land-see/content/summer-sale-sm.jpg">
+					<img src="{{ Theme::image_src('theme/pub/img/land-see/content/summer-sale-sm.jpg') }}"><amp-img placeholder="" alt="Summer Sale!" media="(max-width: 360px)" width="329" height="348" layout="responsive" src="../img/land-see/content/summer-sale-sm.jpg">
 					</amp-img>
 				</amp-anim>
 			</a>

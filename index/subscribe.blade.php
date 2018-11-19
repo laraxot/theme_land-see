@@ -20,6 +20,6 @@
 			</div>
 			<amp-position-observer on="scroll:subscribeBGParallax.seekTo(percent=event.percent)" layout="nodisplay">
 			</amp-position-observer>
-			<amp-img alt="A view of the sea, see?" class="land-see-subscribe-bg cover" layout="fixed-height" height="679" src="../img/land-see/content/khatam-tadayon-107740.jpg">
+            <amp-img alt="A view of the sea, see?" class="land-see-subscribe-bg cover" layout="fixed-height" height="679" src="../img/land-see/content/khatam-tadayon-107740.jpg">
 			</amp-img>
 		</div>

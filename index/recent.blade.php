@@ -6,8 +6,8 @@
 				<ul class="list-reset m0 p0 center justify-center fit">
 					<li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
 						<a href="kim-myeong.amp.html" class="text-decoration-none">
-							<amp-img class="land-see-post-image cover" alt="Studio Serif, interior." media="" width="409" height="305" layout="responsive" src="../img/land-see/content/studio-310px.jpg">
-							</amp-img>
+							<img src="{{ Theme::image_src('themes/land-see/img/land-see/content/studio-310px.jpg') }}">
+							
 						</a>
 						<a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="stories.amp.html?category&#x3D;design#land-see-design">Design</a>
 						<h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">Office Tour: Studio Serif</a></h4>
