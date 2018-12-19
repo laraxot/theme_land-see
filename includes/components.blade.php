@@ -173,11 +173,17 @@ Form::macro('bsBtnDelete', function ($extra) {
     $params=array_merge($params, $extra);
     $params['routename']='';unset($params['routename']);
     $route=route($routename, $params);
-
-    Theme::addStyle('/theme/bc/sweetalert/dist/sweetalert.css');
-    Theme::addScript('/theme/bc/jquery/dist/jquery.min.js');
-    Theme::addScript('/theme/bc/sweetalert/dist/sweetalert.min.js');
-    Theme::addScript('/theme/js/btnDeleteX.js');
+    
+    //Theme::add('/theme/bc/jquery/dist/jquery.min.js');
+    Theme::add('theme/bc/sweetalert2/dist/sweetalert2.min.js'); 
+    Theme::add('theme/bc/sweetalert2/dist/sweetalert2.min.css'); 
+    Theme::add('/theme/js/btnDeleteX2.js');
+    
+    /*-- sweet alert 1 --
+    Theme::add('/theme/bc/sweetalert/dist/sweetalert.css');
+    Theme::add('/theme/bc/sweetalert/dist/sweetalert.min.js');
+    Theme::add('/theme/js/btnDeleteX.js');
+    */
     $class='btn btn-small btn-danger';
     if (isset($extra['class'])) {
         $class.=' '.$extra['class'];
