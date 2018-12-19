@@ -177,7 +177,7 @@ Form::macro('bsBtnDelete', function ($extra) {
     //Theme::add('/theme/bc/jquery/dist/jquery.min.js');
     Theme::add('theme/bc/sweetalert2/dist/sweetalert2.min.js'); 
     Theme::add('theme/bc/sweetalert2/dist/sweetalert2.min.css'); 
-    Theme::add('/theme/js/btnDeleteX2.js');
+    Theme::add('extend::js/btnDeleteX2.js');
     
     /*-- sweet alert 1 --
     Theme::add('/theme/bc/sweetalert/dist/sweetalert.css');
@@ -188,7 +188,7 @@ Form::macro('bsBtnDelete', function ($extra) {
     if (isset($extra['class'])) {
         $class.=' '.$extra['class'];
     }
-    return '<a class="'.$class.'" href="#" data-token="'. csrf_token() .'" data-id="'.$id.'" data-href="'.$row->pivot->url.'?id='.$id.'" data-toggle="tooltip" title="Cancella">
+    return '<a class="'.$class.'" href="#" data-token="'. csrf_token() .'" data-id="'.$id.'" data-href="'.$row->destroy_url.'?id='.$id.'" data-toggle="tooltip" title="Cancella">
         <i class="fa fa-trash-o fa-fw" aria-hidden="true"></i>
     </a>';
 });
