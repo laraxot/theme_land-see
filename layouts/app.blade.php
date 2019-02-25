@@ -1,7 +1,7 @@
 @extends('pub_theme::layouts.plane')
 @section('body')
-	@include('pub_theme::includes.components')
-	@include('pub_theme::includes.flash')
+	@include('extend::includes.components')
+	@include('extend::includes.flash')
 	{{--
 	<div class="site-wrapper animsition" data-animsition-in="fade-in" data-animsition-out="fade-out">
 	--}}

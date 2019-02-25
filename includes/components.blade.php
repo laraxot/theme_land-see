@@ -31,37 +31,37 @@
 @endphp
 
 {{-- PUB_THEME COMPONENTS --}}
-{{ Form::component('bsText', 'pub_theme::includes.components.form.text',
+{{ Form::component('bsText', 'extend::includes.components.form.text',
     ['name', 'value' => null,'attributes' => [],'lang'=>$lang]) }}    
 
-{{ Form::component('bsPassword', 'pub_theme::includes.components.form.password',
+{{ Form::component('bsPassword', 'extend::includes.components.form.password',
     ['name', 'value' => null,'attributes' => [],'lang'=>$lang]) }}    
 
 
-{{ Form::component('bsTextarea', 'pub_theme::includes.components.form.textarea',
+{{ Form::component('bsTextarea', 'extend::includes.components.form.textarea',
     ['name', 'value' => null,'attributes' => [],'lang'=>$lang]) }}    
 
-{{ Form::component('bsAddress', 'pub_theme::includes.components.form.address',
+{{ Form::component('bsAddress', 'extend::includes.components.form.address',
     ['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 
-{{ Form::component('bsGeoComplete', 'pub_theme::includes.components.form.geocomplete',
+{{ Form::component('bsGeoComplete', 'extend::includes.components.form.geocomplete',
 	['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 
-{{ Form::component('bsGeoCompleteFull', 'pub_theme::includes.components.form.geocompletefull',
+{{ Form::component('bsGeoCompleteFull', 'extend::includes.components.form.geocompletefull',
 	['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 
-{{ Form::component('bsTypeahead', 'pub_theme::includes.components.form.typeahead',
+{{ Form::component('bsTypeahead', 'extend::includes.components.form.typeahead',
 	['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 
-{{ Form::component('bsUploadImg', 'pub_theme::includes.components.form.unisharp.uploadimg',
+{{ Form::component('bsUploadImg', 'extend::includes.components.form.unisharp.uploadimg',
     ['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 
-{{ Form::component('bsCheckbox', 'pub_theme::includes.components.form.checkbox',
+{{ Form::component('bsCheckbox', 'extend::includes.components.form.checkbox',
     ['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 
 {{-- BTN --}}
 {{--  
-{{ Form::component('bsBtnUpDown', 'pub_theme::includes.components.form.btn.updown',
+{{ Form::component('bsBtnUpDown', 'extend::includes.components.form.btn.updown',
     ['name', 'value' => null, 'attributes' => [],'lang'=>$lang]) }}
 --}}
 
